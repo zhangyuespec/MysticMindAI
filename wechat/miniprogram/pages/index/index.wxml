@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <!-- 聊天窗口 -->
+    <scroll-view class="chat-window" scroll-y>
+      <block wx:for="{{messages}}" wx:key="id">
+        <view class="message {{item.role}}">
+          <view class="bubble">{{item.content}}</view>
+        </view>
+      </block>
+    </scroll-view>
+
+    <!-- 输入框和发送按钮 -->
+    <view class="input-area">
+      <input
+        class="input"
+        placeholder="请输入你的问题"
+        bindinput="onInput"
+        value="{{inputText}}"
+      />
+      <button class="send-button" bindtap="sendMessage">发送</button>
+    </view>
+  </view>
+</scroll-view>
