@@ -15,7 +15,6 @@ beautifulsoup4==4.13.3
 blinker==1.9.0
 boto3==1.36.18
 botocore==1.36.18
-Brotli @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_f7i0oxypt6/croot/brotli-split_1736182464088/work
 build==1.2.2.post1
 cachetools==5.5.1
 certifi==2025.1.31
